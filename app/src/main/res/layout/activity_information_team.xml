@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CartActicity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/btnShowUser"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#03A9F4"
+                app:title="Thông tin SHOP">
+
+
+            </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:textColor="#FF5722"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:text="Shop Phong Sang"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Email :tranphong180798@gmail.com"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="150dp">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/phong"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                android:textColor="#FF5722"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+
+                android:text="CEO: Trần Đỗ Đại Phong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="150dp">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/sang"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:textColor="#FF5722"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:text=" CEO: Nguyễn Tấn Sang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/onlineshopp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
+
